@@ -20,6 +20,4 @@ public class Manufacturer {
     private String country;
     @OneToMany(mappedBy = "manufacturer")
     private List<Product> products;
-
-
 }

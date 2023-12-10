@@ -22,7 +22,7 @@ public class Order {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
-    @OneToMany(mappedBy = "order")
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderItem> orderItems;
     private BigDecimal totalAmount;
     @ManyToOne
@@ -35,5 +35,4 @@ public class Order {
     @JoinColumn(name = "payment_status_id")
     private PaymentStatus paymentStatus;
     private LocalDateTime createData;
-
 }

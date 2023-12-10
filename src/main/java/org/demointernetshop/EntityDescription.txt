@@ -14,3 +14,5 @@
 12. PaymentMethod
 13. PaymentStatus
 
+https://dbdiagram.io/d/6569ba1e56d8064ca030e599
+

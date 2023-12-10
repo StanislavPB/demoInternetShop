@@ -21,7 +21,7 @@ public class UserDto {
     @Schema(description = "Username of the user", example = "Igor123")
     private String username;
 
-    @Schema(description = "Role of the user", example = "CLIENT")
+    @Schema(description = "Role of the user", example = "User")
     private String role;
 
     @Schema(description = "User's email", example = "user@mail.com")

@@ -288,6 +288,7 @@ Response:
    {
        "cartId": 22,
        "userId": 22,
+       "payment_method": "payPal",
        products: [
                        {
                            "id": 1,
@@ -318,7 +319,7 @@ Response:
                    ]
     "order_status": "delivered"
     "payment_status": "paid",
-    "payment_method": "paypal",
+    "payment_method": "payPal",
     "create_date": "2023-12-01T15:30:45"
     },
 

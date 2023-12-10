@@ -22,6 +22,6 @@ public class Product {
     @ManyToOne
     @JoinColumn(name = "manufacturer_id")
     private Manufacturer manufacturer;
-
-
+    @OneToOne(mappedBy = "product", fetch = FetchType.LAZY)
+    private ProductInfo productInfo;
 }
