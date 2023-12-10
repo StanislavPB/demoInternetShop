@@ -14,10 +14,10 @@ import java.math.BigDecimal;
 public class ProductShortInfoDto {
     @Schema(description = "Product identifier", example = "1")
     private Integer id;
-    @Schema(description = "Name of the product", example = "iPhone 15")
+    @Schema(description = "Name of the product", example = "Galaxy S23")
     private String name;
-    @Schema(description = "Price of the product", example = "1500.0")
+    @Schema(description = "Price of the product", example = "750.00")
     private BigDecimal price;
-    @Schema(description = "Quantity of the product", example = "24")
+    @Schema(description = "Quantity of the product", example = "1")
     private Integer quantity;
 }

@@ -5,10 +5,7 @@ import org.demointernetshop.dto.user.UserDto;
 import org.demointernetshop.dto.user.UserRegistrationDto;
 import org.demointernetshop.dto.user.UserUpdateDto;
 import org.demointernetshop.services.UserService;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
@@ -22,9 +19,7 @@ public class UserController {
     }
 
     @PutMapping("/{userId}")
-    public UserDto updateUser(UserUpdateDto request, Integer userId) {
+    public UserDto updateUser(@PathVariable("userId") Integer userId, UserUpdateDto request) {
         return userService.updateUser(userId, request);
     }
-
-
 }

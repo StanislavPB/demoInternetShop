@@ -1,9 +1,8 @@
 package org.demointernetshop.controllers.product;
 
 import lombok.RequiredArgsConstructor;
-import org.demointernetshop.dto.product.CategoryDto;
-import org.demointernetshop.dto.product.CategoryWithPricesDto;
-import org.demointernetshop.dto.product.ProductDto;
+import org.demointernetshop.dto.category.CategoryDto;
+import org.demointernetshop.dto.category.CategoryWithPricesDto;
 import org.demointernetshop.services.CategoryService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +27,8 @@ public class CategoryController {
     public CategoryWithPricesDto getCategoryWithPrices(@PathVariable("category_id") Integer categoryId) {
         return categoryService.getCategoryWithPrices(categoryId);
     }
-
-
+    @GetMapping("/price")
+    public List<CategoryWithPricesDto> getCategoryWithPrices() {
+        return categoryService.getPriceBoundsByAllCategories();
+    }
 }

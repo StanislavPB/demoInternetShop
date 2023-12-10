@@ -4,7 +4,6 @@ import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.aspectj.weaver.ast.Or;
 
 import java.util.List;
 
@@ -20,5 +19,4 @@ public class OrderStatus {
     private String status;
     @OneToMany(mappedBy = "orderStatus")
     private List<Order> orders;
-
 }

@@ -1,4 +1,4 @@
-package org.demointernetshop.dto.product;
+package org.demointernetshop.dto.category;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
